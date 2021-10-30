@@ -1,0 +1,39 @@
+
+.input-holder {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    color: var(--vdcyan);
+    font-weight: 400;
+}
+
+.tap {
+    margin: 20px 0;
+}
+.buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 1rem;
+    color: var(--white);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background: var(--vdcyan);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom {
+    background: var(--lcyan);
+    color: (--gcyan);
+}   

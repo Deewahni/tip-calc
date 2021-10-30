@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -16,29 +19,71 @@
 </head>
 <body>
 
-  Bill
+  <main>
+    <div class="logo"><img src="images/logo.svg" alt=""></div>
+    <div class="container row">
+      <div class="card col-lg-6 col-md-12">
+        <div class="tab">
+           <div class="tap">
+              <label for="bill">Bill</label>
+              <div class="input-holder">
+                <div class="icon"><img src="images/icon-dollar.svg" alt=""></div>
+                <input type="text" placeholder="0" class="bill">
+              </div>
+           </div>
+      
+           <div class="tip">
+             <label for="tip">Select Tip %</label>
+             <div class="buttons">
+               <button class="btn">5%</button>
+               <button class="btn">10%</button>
+               <button class="btn">15%</button>
+               <button class="btn">25%</button>
+               <button class="btn">50%</button>
+               <input class="btn custom" type="text" placeholder="Custom">
+             </div>
+            </div>
+      
+            <div class="tap">
+              <label for="Number of person">Number of People</label>
+              <div class="input-holder">
+                <div class="icon"><img src="images/icon-person.svg" alt=""></div>
+                <input type="text" placeholder="0" class="numOfPerson">
+              </div>
+           </div>
+        </div>
+      </div>
+      
+        <div class="card card-dark col-lg-6 col-md-12">
+          <div class="tab2">
+           <div>
+              <div class="amount">
+                <div class="amount-text">
+                  <h4>Tip Amount </h4>
+                  <span>/ person</span>
+                </div>
+                <input type="text" placeholder="0.00" class="tipAmount" disabled="true">
+              </div>
+              
+              <div class="amount">
+                <div class="amount-text">
+                  <h4>Total</h4>
+                  <span>/ person</span>
+                </div>
+                <input type="text" placeholder="0.00" class="total" disabled="true">
+              </div>
+           </div>
+            
+            <button class="btn b-r">R E S E T</button>
+          </div>
+        </div>
+    </div>
+  </main>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">codeTinker</a>.
   </div>
 </body>
 </html>

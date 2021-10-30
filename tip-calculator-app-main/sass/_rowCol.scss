@@ -1,0 +1,42 @@
+[class*="column-"] {
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @for $i from 1 through 12 {
+      .col-lg-#{$i} {
+        width: 100% / 12 * $i;
+      }
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+
+  @media only screen and (max-width: 760px){[class*="column-"] {
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @for $i from 1 through 12 {
+      .col-md-#{$i} {
+        width: 100% / 12 * $i;
+      }
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }}

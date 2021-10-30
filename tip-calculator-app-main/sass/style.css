@@ -1,0 +1,363 @@
+:root {
+  --primary-color: hsl(172, 67%, 45%);
+  --vdcyan: hsl(183, 100%, 15%);
+  --dgcyan: hsl(186, 14%, 43%);
+  --gcyan: hsl(184, 14%, 56%);
+  --lgcyan:  hsl(185, 41%, 84%);
+  --lcyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --form-input: 24px;
+}
+
+* {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background: var(--lgcyan);
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 20px;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  width: calc(100% - 25px);
+  text-align: right;
+  background-color: var(--lcyan);
+  border: none;
+  padding: 5px;
+  font-size: var(--form-input);
+  color: var(--gcyan);
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 2px var(--primary-color) solid;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--gcyan);
+  font-weight: 700;
+}
+
+input:-ms-input-placeholder {
+  color: var(--gcyan);
+  font-weight: 700;
+}
+
+input::-ms-input-placeholder {
+  color: var(--gcyan);
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: var(--gcyan);
+  font-weight: 700;
+}
+
+button {
+  color: var(--white);
+}
+
+button:hover, .b-r:hover {
+  background: var(--primary-color);
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.card-dark {
+  background: var(--vdcyan);
+  border-radius: 12px;
+  color: var(--white);
+}
+
+.b-r {
+  background-color: #016a6f !important;
+}
+
+.b-r:hover {
+  background: var(--primary-color) !important;
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    padding: 500px 0;
+  }
+}
+
+[class*="column-"] {
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.row .col-lg-1 {
+  width: 8.33333%;
+}
+
+.row .col-lg-2 {
+  width: 16.66667%;
+}
+
+.row .col-lg-3 {
+  width: 25%;
+}
+
+.row .col-lg-4 {
+  width: 33.33333%;
+}
+
+.row .col-lg-5 {
+  width: 41.66667%;
+}
+
+.row .col-lg-6 {
+  width: 50%;
+}
+
+.row .col-lg-7 {
+  width: 58.33333%;
+}
+
+.row .col-lg-8 {
+  width: 66.66667%;
+}
+
+.row .col-lg-9 {
+  width: 75%;
+}
+
+.row .col-lg-10 {
+  width: 83.33333%;
+}
+
+.row .col-lg-11 {
+  width: 91.66667%;
+}
+
+.row .col-lg-12 {
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 760px) {
+  [class*="column-"] {
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .row .col-md-1 {
+    width: 8.33333%;
+  }
+  .row .col-md-2 {
+    width: 16.66667%;
+  }
+  .row .col-md-3 {
+    width: 25%;
+  }
+  .row .col-md-4 {
+    width: 33.33333%;
+  }
+  .row .col-md-5 {
+    width: 41.66667%;
+  }
+  .row .col-md-6 {
+    width: 50%;
+  }
+  .row .col-md-7 {
+    width: 58.33333%;
+  }
+  .row .col-md-8 {
+    width: 66.66667%;
+  }
+  .row .col-md-9 {
+    width: 75%;
+  }
+  .row .col-md-10 {
+    width: 83.33333%;
+  }
+  .row .col-md-11 {
+    width: 91.66667%;
+  }
+  .row .col-md-12 {
+    width: 100%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.input-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+label {
+  color: var(--vdcyan);
+  font-weight: 400;
+}
+
+.tap {
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  color: var(--white);
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  background: var(--vdcyan);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.custom {
+  background: var(--lcyan);
+  color: --gcyan;
+}
+
+.amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.amount .amount-text {
+  font-size: 15px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.amount .tipAmount, .amount .total, .amount .tipAmount::-webkit-input-placeholder, .amount .total::-webkit-input-placeholder {
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 3rem;
+  cursor: auto;
+}
+
+.amount .tipAmount, .amount .total, .amount .tipAmount:-ms-input-placeholder, .amount .total:-ms-input-placeholder {
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 3rem;
+  cursor: auto;
+}
+
+.amount .tipAmount, .amount .total, .amount .tipAmount::-ms-input-placeholder, .amount .total::-ms-input-placeholder {
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 3rem;
+  cursor: auto;
+}
+
+.amount .tipAmount, .amount .total, .amount .tipAmount::placeholder, .amount .total::placeholder {
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 3rem;
+  cursor: auto;
+}
+
+.tab2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
