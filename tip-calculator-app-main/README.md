@@ -56,7 +56,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 -Vanilla JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -103,4 +102,3 @@ row---col-lg-6 for dynamic viewport.
 I wanto extend my appreciation to FrontendMentor for the continous update they make with the website. 
 It's amazing how these people selflessly created projects for aspiring frontend developers.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
