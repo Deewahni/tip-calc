@@ -54,25 +54,24 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+-Vanilla JavaScript
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I have learned how to change the placeholder color, I also learned how to manipulate the input tag from 
+font color to the background and disabling it.
 
-To see how you can add code snippets, see below:
+
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+<input disabled="true">
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+input::placeholder {color: var(--gcyan); font-weight: 700;};
+
 ```
 ```js
 const proudOfThisFunc = () => {
@@ -80,14 +79,10 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
+I want to focus more on DOM manipulations in my next projects and also, I want to use more of the 
+row---col-lg-6 for dynamic viewport.
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
@@ -99,14 +94,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Deewahni Tidalgo](https://www.deewahni.netlify.app)
+- Frontend Mentor - [@deewahni](https://www.frontendmentor.io/profile/deewahni)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I wanto extend my appreciation to FrontendMentor for the continous update they make with the website. 
+It's amazing how these people selflessly created projects for aspiring frontend developers.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
