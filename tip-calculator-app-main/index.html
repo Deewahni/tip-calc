@@ -35,12 +35,12 @@
            <div class="tip">
              <label for="tip">Select Tip %</label>
              <div class="buttons">
-               <button class="btn" onclick="five()">5%</button>
-               <button class="btn" onclick="">10%</button>
-               <button class="btn" onclick="">15%</button>
-               <button class="btn" onclick="">25%</button>
-               <button class="btn" onclick="">50%</button>
-               <input class="btn custom" type="text" placeholder="Custom">
+               <button class="btn tip%" value="0.05" onclick="five()">5%</button>
+               <button class="btn tip%" value="0.10" onclick="">10%</button>
+               <button class="btn tip%" value="0.15" onclick="">15%</button>
+               <button class="btn tip%" value="0.25" onclick="">25%</button>
+               <button class="btn tip%" value="0.50" onclick="">50%</button>
+               <input class="btn custom" value="" type="text" placeholder="Custom">
              </div>
             </div>
       
@@ -62,7 +62,7 @@
                   <h4>Tip Amount </h4>
                   <span>/ person</span>
                 </div>
-                <input type="text" placeholder="0.00" class="tipAmount" id="tipAmount" disabled="true">
+                <input type="text" placeholder="$0.00" class="tipAmount" id="tipAmount" disabled="true">
               </div>
               
               <div class="amount">
@@ -70,7 +70,7 @@
                   <h4>Total</h4>
                   <span>/ person</span>
                 </div>
-                <input type="text" placeholder="0.00" class="total" id="total" disabled="true">
+                <input type="text" placeholder="$0.00" class="total" id="total" disabled="true">
               </div>
            </div>
             

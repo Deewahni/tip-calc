@@ -55,6 +55,8 @@ button {color: var(--white);}
 
 button:hover, .b-r:hover { background: var(--primary-color);}
 
+.active {background: var(--primary-color);}
+
 .container {
     margin-top: 50px;
     max-width: 800px;
