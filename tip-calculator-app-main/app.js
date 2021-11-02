@@ -13,7 +13,6 @@ function five() {
 
     document.querySelector('#tipAmount').value = '$'+ parseFloat(tipAmount).toFixed(2);
     document.getElementById('total').value = '$' + parseFloat(total).toFixed(2);
-
 }
 
 // document.addEventListener('click', enterTip);

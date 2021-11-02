@@ -45,6 +45,12 @@ input {
     cursor: pointer;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
 input:focus {
     outline: 2px var(--primary-color) solid;
 }

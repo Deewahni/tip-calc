@@ -53,6 +53,12 @@ input {
   cursor: pointer;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input:focus {
   outline: 2px var(--primary-color) solid;
 }
@@ -82,6 +88,10 @@ button {
 }
 
 button:hover, .b-r:hover {
+  background: var(--primary-color);
+}
+
+.active {
   background: var(--primary-color);
 }
 
@@ -322,28 +332,28 @@ label {
 .amount .tipAmount, .amount .total, .amount .tipAmount::-webkit-input-placeholder, .amount .total::-webkit-input-placeholder {
   background: transparent;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: auto;
 }
 
 .amount .tipAmount, .amount .total, .amount .tipAmount:-ms-input-placeholder, .amount .total:-ms-input-placeholder {
   background: transparent;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: auto;
 }
 
 .amount .tipAmount, .amount .total, .amount .tipAmount::-ms-input-placeholder, .amount .total::-ms-input-placeholder {
   background: transparent;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: auto;
 }
 
 .amount .tipAmount, .amount .total, .amount .tipAmount::placeholder, .amount .total::placeholder {
   background: transparent;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: auto;
 }
 
